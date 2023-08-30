@@ -1,0 +1,123 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 1px;
+    padding: 1px;
+    background-color: #8199eb;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #afd9e9;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a{
+    text-align: left;
+}
+
+.menu{
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #517583;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style:none;
+    border:1px solid #38226b;
+}
+
+.menu li a{
+    color:#14074b; 
+    text-decoration:none; 
+    padding:1px 1px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:#87d4bd;
+    color:#fff;
+    text-shadow:0px 0px 1px #fff;
+}
+
+nav ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2 {
+    color: #291736;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #517583;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #291736;
+    font-size: 18px;
+    text-align: center;
+}
+
+th{
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+}
+
+td {
+    background-color: #8ac0df;
+    margin: 1px;
+    text-align: center;
+}
+
+.titulos{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #7b87ce;
+}
+
+ul li{
+    color: #291736;
+    font-size: 14px;
+    text-align: left;
+    }
+
+tr td{
+color: #291736;
+font-size: 18px;
+text-align: center;
+}
+
+tr :hover{
+    background:#87d4bd;
+    color:#fff;
+    text-shadow:0px 0px 1px #fff;
+}
+
+tr p:hover{
+    background:#99b4dd;
+    color:#000000;
+    text-shadow:0px 0px 1px #e4d4d4;
+}
+
+tr td:hover{
+    background:#a9ddce;
+    color:#000000;
+    text-shadow:0px 0px 1px #e4d4d4;
+}
+
+footer{
+    font-size: 15px;
+    padding: 5px;
+    color: #000000;
+    text-align: center;
+    background-color: #a8bec7;
+}
