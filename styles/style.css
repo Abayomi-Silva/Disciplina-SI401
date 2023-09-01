@@ -121,6 +121,9 @@ footer{
     text-align: center;
     background-color: #a8bec7;
 }
-#hiperlink{
+#hiperlink, #site{
     font-size: 22px;
+}
+ #rafaella{
+    float: left;
 }
