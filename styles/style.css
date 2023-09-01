@@ -121,9 +121,29 @@ footer{
     text-align: center;
     background-color: #a8bec7;
 }
-#hiperlink, #site{
-    font-size: 22px;
+a:link{
+    color: #075a53;
+}
+a:visited{
+    color: #000000;
+}
+a:hover{
+    color: #008607;
 }
  #rafaella{
     float: left;
+}
+.button {
+    align-content: center;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    background-color: #7b82bb;
+    color: white;
+    display: inline-grid;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 15px 1px 2px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
