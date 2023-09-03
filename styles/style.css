@@ -52,7 +52,7 @@ h1, h2 {
     text-align: center;
     margin: 10px auto;
     padding: 10px;
-    background-color: #517583;
+    background-color: #2798c3;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -138,7 +138,7 @@ a:hover{
     width: 200px;
     height: 40px;
     font-size: 22px;
-    background-color: #7b82bb;
+    background-color: #2798c3;
     color: white;
     display: inline-grid;
     border-radius: 10px;
