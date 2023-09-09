@@ -7,15 +7,35 @@
         <script src="./js/script.js"></script>
     </head>
     <body>
-        <div style="float: left; margin: 2px;">
-            <img onMouseOver="displayName1()" onClick="trocarImagem1()" id="lua" 
-            src="./images/lua.jpg" alt="lua" width="225" height="225">
-            <p id="moon"></p>
-        </div>
-        <div style="float: left; margin: 2px;">
-            <img onMouseover="displayName2()" onClick="trocarImagem2()" id="sol" 
-            src="./images/sol.jpg" alt="sol" width="225px" height="225px">
-            <p id="sun"></p>
-        </div>
+        <h1>Eventos em JavaScript - v1</h1>
+        <table>
+            <tr>
+                <td><img src="images/lua.jpg" onMouseOver='show("ft1")' onClick='swap("ft1")' id="ft1"  alt="lua" width="100" height="100"></td>
+                <td><img src="images/sol.jpg" onMouseOver='show("ft2")' onClick='swap("ft2")' id="ft2"  alt="Sol" width="100" height="100"></td>
+                <td><img src="images/lua.jpg" onMouseOver='show("ft3")' onClick='swap("ft3")' id="ft3"  alt="lua" width="100" height="100"></td>
+            </tr>
+        </table>
+
+        <p id="show"></p>
+
+        <div class="container">
+            <table>
+                <tr>
+                    <td><img src="images/fundo.jpg" class="top1" id="t1" onclick='position("t1")'></div></td>
+                    <td><img src="images/fundo.jpg" class="top2" id="t2" onclick='position("t2")'></div></td>
+                    <td><img src="images/fundo.jpg" class="top3" id="t3" onclick='position("t3")'></div></td>
+                </tr>
+                <tr>
+                    <td><img src="images/fundo.jpg" class="mid1" id="m1" onclick='position("m1")'></div></td>
+                    <td><img src="images/fundo.jpg" class="mid2" id="m2" onclick='position("m2")'></div></td>
+                    <td><img src="images/fundo.jpg" class="mid3" id="m3" onclick='position("m3")'></div></td>
+                </tr>
+                <tr>
+                    <td><img src="images/fundo.jpg" class="bot1" id="b1" onclick='position("b1")'></div></td>
+                    <td><img src="images/fundo.jpg" class="bot2" id="b2" onclick='position("b2")'></div></td>
+                    <td><img src="images/fundo.jpg" class="bot3" id="b3" onclick='position("b3")'></div></td>
+                </tr>
+            </table> 
+            </div>
     </body>
 </html>
