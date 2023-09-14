@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form JS</title>
+    <script src="/js/form.js"></script>
+</head>
+<body>
+    <h1>Formulários com JavaScript</h1>
+    <form name="myForm" action="js.html" onsubmit="return form()" method="post">
+    <p>Nome: <input type="text" name="fname"></p>
+    <p>Sexo: </p>
+    <p><input type="radio" name="sex" value="Masculino">Masculino</p> 
+    <p><input type="radio" name="sex" value="Feminino">Feminino</p> 
+    <p>Estado Civil:</p>
+    <select name="estado">
+        <option value="Solteiro">Solteiro</option>
+        <option value="Casado" selected="selected">Casado</option>
+        <option value="Viúvo">Viúvo</option>
+        <option value="Divorciado">Divorciado</option>
+    </select>
+    <p>Bens financiados:</p>
+    <p><input type="checkbox" name="bens" value="Imóvel">Imóvel</p> 
+    <p><input type="checkbox" name="bens" value="Carro">Carro</p> 
+    <p><input type="checkbox" name="bens" value="Barco">Barco</p> 
+    
+    <p><input type="submit" value="Enviar"></p>
+
+    <h2 id="campos"></h2>
+    <p id="nome"></p>
+    <p id="sexo"></p>
+    <p id="estd"></p>
+    <p id="bens"></p>
+</body>
+</html>
