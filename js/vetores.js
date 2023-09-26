@@ -1,37 +1,22 @@
-function montaOrdena(formID)
-{
+function montaOrdena(formID){
 	var myForm = document.forms[formID];
 	
-	try
-	{
-		// Cria o objeto Array (parseInt() converte String para Inteiro):
+	try{
 		var meuVetor = new Array(parseInt(myForm["a1"].value), parseInt(myForm["a2"].value), parseInt(myForm["a3"].value), parseInt(myForm["a4"].value), parseInt(myForm["a5"].value), parseInt(myForm["a6"].value), myForm["a7"].value, parseInt(myForm["a8"].value), parseInt(myForm["a9"].value), parseInt(myForm["a10"].value));
-	
-		// Chama o método de ordenação:
 		bubbleSort(meuVetor);
-		
-		// Imprime os dados do vetor ordenado:
 		imprimeDados(meuVetor);
-		
-		// Exibe a data:
 		document.getElementById("data").innerHTML = "Vetor ordenado em: " + new Date();
-
 	}
-	catch(err)
-	{
+	catch(err){
 		alert("Erro: " + err);
 	}
 }
 
-function bubbleSort(vetor)
-{
+function bubbleSort(vetor){
 	var temp;
-	for(var i=vetor.length - 1; i>=0; i--)
-	{
-		for (var j=0; j < i; j++)
-		{
-			if (vetor[j] > vetor[i])
-			{
+	for(var i=vetor.length-1;i>=0;i--){
+		for(var j=0;j<i;j++){
+			if (vetor[j]>vetor[i]){
 				temp = vetor[j];
 				vetor[j] = vetor[i];
 				vetor[i] = temp;
@@ -39,17 +24,11 @@ function bubbleSort(vetor)
 		}
 	}
 }
-
-function imprimeDados(vetor)
-{
+function imprimeDados(vetor){
 	var saida = "Valores:";
-	
-	for(var i=0; i < vetor.length; i++)
-	{
+	for(var i=0; i < vetor.length; i++){
 		saida += " " + vetor[i];
 	}
-	
 	document.getElementById("titulo").innerHTML = "Vetor Ordenado:";
 	document.getElementById("vetor").innerHTML = saida;
-	
 }	
