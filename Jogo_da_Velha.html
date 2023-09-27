@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo da Velha</title>
-        <script src="js/game.js"></script>
+       
         <link rel="stylesheet" href="styles/velha.css">
     </head>
     <body>
@@ -18,21 +18,21 @@
             <br>
             <button onclick="comecar()">Iniciar Jogo</button>
         </div>
-        <div style="display: none;">
-            <div class="game-board">
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
-                <div class="cell" onclick="jogar(this)"></div>
+        <div class="tabuleiro">
+            <div class="quadrados">
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
+                <div class="blocos" onclick="jogar(this)"></div>
             </div>
             <p class="status">Vez de <span id="vezJogador"></span>!</p>
 
         </div>
-
+        <script src="js/game.js"></script>
     </body>
 </html>
