@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jogo da Velha</title>
-       
-        <link rel="stylesheet" href="styles/velha.css">
-    </head>
-    <body>
-        <h1>Jogo da Velha</h1>
-        <div>
-            <label for="playerX">Nome do Jogador X:</label>
-            <input type="text" id="playerX" placeholder="Jogador X">
-            <br>
-            <label for="playerO">Nome do Jogador O:</label>
-            <input type="text" id="playerO" placeholder="Jogador O">
-            <br>
-            <button onclick="comecar()">Iniciar Jogo</button>
-        </div>
-        <div class="tabuleiro">
-            <div class="quadrados">
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-                <div class="blocos" onclick="jogar(this)"></div>
-            </div>
-            <p class="status">Vez de <span id="vezJogador"></span>!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+        /* Estilos CSS (pode ser incluído inline ou em um arquivo externo) */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
 
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        label, input, button {
+            margin: 5px;
+        }
+
+        .game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            margin: 20px auto;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .status {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div>
+        <label for="playerX">Nome do Jogador X:</label>
+        <input type="text" id="playerX" placeholder="Jogador X">
+        <br>
+        <label for="playerO">Nome do Jogador O:</label>
+        <input type="text" id="playerO" placeholder="Jogador O">
+        <br>
+        <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+    <div style="display: none;">
+        <div class="game-board">
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
         </div>
-        <script src="js/game.js"></script>
-    </body>
+        <p class="status">Vez de <span id="currentPlayerDisplay">Jogador X</span></p>
+        
+    </div>
+    <script src="js/game.js">
+       
+    
+    </script>
+</body>
 </html>
