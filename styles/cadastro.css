@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #012b43;
+   
+}
+
+.container{
+    display: flex;
+    background-color: #73c0bf;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #73c0bf;
+    text-align:  center;
+}
+
+li:hover, #botao:hover{
+    background-color: chartreuse;
+}
+
+.menu{
+    background-color: #d8fbfc;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.cadastro{
+    background-color: #d8fbfc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+form{
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    line-height: 16px;
+}
+
+h2{
+    padding: 2px;
+    margin: 4px;
+    background-color: #9fcac9;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#botao{
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #73c0bf;
+    border-radius: 10px;
+}
+
+table{
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+th{
+    background-color: #9fcac9;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+    border: 1px solid #000000;
+}
+
+input{
+    text-align: center;
+}
